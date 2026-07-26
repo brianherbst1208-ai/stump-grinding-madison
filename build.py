@@ -11,9 +11,9 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 
 SITE = {
     "name": "Madison Stump Grinding",
-    "phone_display": "(608) 555-0147",
-    "phone_tel": "+16085550147",
-    "email": "quotes@stumpgrindingmadison.com",
+    "phone_display": "(608) 493-0540",
+    "phone_tel": "+16084930540",
+    "email": "brian@briansconsulting.com",
     "domain": "https://stumpgrindingmadison.com",
     "region": "WI",
     "hq_city": "Madison",
@@ -359,7 +359,7 @@ CITIES = [
   "slug":"madison","name":"Madison","zips":"53703, 53704, 53705, 53711, 53713, 53714, 53716, 53717, 53718, 53719",
   "hoods":["Near West Side","Tenney-Lapham","Marquette / Willy Street","Nakoma","Westmorland","Maple Bluff","Shorewood Hills","Schenk-Atwood","Vilas","Monroe Street"],
   "meta_title":"Stump Grinding Madison WI | Free On-Site Quotes",
-  "meta_desc":"Fully insured stump grinding in Madison, WI. Clay-ready equipment, tight backyard access & same-day response. Call (608) 555-0147 for a free quote.",
+  "meta_desc":"Fully insured stump grinding in Madison, WI. Clay-ready equipment, tight backyard access & same-day response. Call (608) 493-0540 for a free quote.",
   "lead":"From the isthmus to the far west side, we grind stumps clean, haul the mess, and leave your Madison yard ready to replant.",
   "body":"""
 <p>Madison's tree canopy is one of the city's signatures — the burr oaks along the UW Arboretum, the elms shading Monroe Street, the towering silver maples over near-west-side bungalows. When one of those trees finally comes down, the stump left behind on a tight isthmus lot can be stubborn and unsightly. <strong>Madison Stump Grinding</strong> removes it cleanly, whether you're on a narrow terrace lot in Tenney-Lapham or a deep, mature parcel in Nakoma or Maple Bluff.</p>
@@ -386,7 +386,7 @@ CITIES = [
   "slug":"sun-prairie","name":"Sun Prairie","zips":"53590",
   "hoods":["Cannery Row","Smith's Crossing","Village Green","O'Keeffe area","Downtown / Cannery Square"],
   "meta_title":"Stump Grinding Sun Prairie WI | Fast Free Quotes",
-  "meta_desc":"Insured stump grinding in Sun Prairie, WI. New-subdivision lot clearing, sod-safe equipment & same-day response. Call (608) 555-0147 for a free estimate.",
+  "meta_desc":"Insured stump grinding in Sun Prairie, WI. New-subdivision lot clearing, sod-safe equipment & same-day response. Call (608) 493-0540 for a free estimate.",
   "lead":"Sun Prairie is growing fast — and we help homeowners and builders clear the stumps and hedgerows left behind.",
   "body":"""
 <p>Few Dane County towns have grown like Sun Prairie. New subdivisions keep rising on what were farm fields a decade ago, and with that growth comes a steady mix of leftover fence-line trees, cleared hedgerows, and aging silver maples in established neighborhoods near Cannery Square. <strong>Madison Stump Grinding</strong> keeps Sun Prairie yards clean and buildable, from Smith's Crossing to the streets around Angell Park.</p>
@@ -413,7 +413,7 @@ CITIES = [
   "slug":"fitchburg","name":"Fitchburg","zips":"53711, 53713, 53719, 53575",
   "hoods":["Jamestown","Belmar","Swan Creek","Nine Springs","Seminole Forest","Fitchburg Center"],
   "meta_title":"Stump Grinding Fitchburg WI | Free On-Site Quote",
-  "meta_desc":"Insured stump grinding in Fitchburg, WI. Wet-clay ready gear near Nine Springs, residential & commercial, same-day response. Call (608) 555-0147.",
+  "meta_desc":"Insured stump grinding in Fitchburg, WI. Wet-clay ready gear near Nine Springs, residential & commercial, same-day response. Call (608) 493-0540.",
   "lead":"From Jamestown backyards to commercial sites off Seminole Highway, we grind Fitchburg's stumps down and out.",
   "body":"""
 <p>Fitchburg blends established neighborhoods, newer subdivisions, and working commercial corridors — and each brings its own kind of stump. Around Jamestown and Swan Creek you'll find mature yard trees; near the Nine Springs E-Way and the wetlands south of the Beltline, the ground stays wet and the clay runs deep. <strong>Madison Stump Grinding</strong> handles all of it across Fitchburg.</p>
@@ -440,7 +440,7 @@ CITIES = [
   "slug":"middleton","name":"Middleton","zips":"53562",
   "hoods":["Middleton Hills","Bishops Bay","Tiedeman's Pond","Pheasant Branch","Downtown Middleton"],
   "meta_title":"Stump Grinding Middleton WI | Free Estimates",
-  "meta_desc":"Fully insured stump grinding in Middleton, WI, the Good Neighbor City. Mature-tree lots, lawn-safe equipment, same-day quotes. Call (608) 555-0147.",
+  "meta_desc":"Fully insured stump grinding in Middleton, WI, the Good Neighbor City. Mature-tree lots, lawn-safe equipment, same-day quotes. Call (608) 493-0540.",
   "lead":"In the Good Neighbor City, we treat your lawn like our own — clean grinding, careful cleanup, fair prices.",
   "body":"""
 <p>Middleton earned its "Good Neighbor City" nickname, and its tree-lined streets show it. Established neighborhoods near Pheasant Branch Conservancy and along the drumlin ridges toward Bishops Bay are full of mature oaks, ashes, and silver maples — beautiful, until one has to come down and leaves a wide stump behind. <strong>Madison Stump Grinding</strong> removes those stumps neatly and respects the polished yards Middleton is known for.</p>
@@ -469,7 +469,7 @@ CITIES = [
   "slug":"verona","name":"Verona","zips":"53593",
   "hoods":["Scenic Ridge","Cathedral Point","Sugar Creek","Hometown Junction","Badger Prairie area"],
   "meta_title":"Stump Grinding Verona WI | Free Quotes, Insured",
-  "meta_desc":"Insured stump grinding in Verona, WI, Hometown of Epic. Rolling-terrain & acreage clearing, same-day response. Call (608) 555-0147 for a free quote.",
+  "meta_desc":"Insured stump grinding in Verona, WI, Hometown of Epic. Rolling-terrain & acreage clearing, same-day response. Call (608) 493-0540 for a free quote.",
   "lead":"On Verona's rolling Driftless-edge lots and larger acreages, we grind stumps and clear ground with the right-sized machine.",
   "body":"""
 <p>Verona sits on the eastern edge of Wisconsin's Driftless Area, where the land starts to roll and the soil turns rockier than the flat clay of the Madison basin. As the "Hometown of Epic" has grown, so have its subdivisions near Scenic Ridge and its larger rural lots out toward Badger Prairie and the Ice Age Trail. <strong>Madison Stump Grinding</strong> serves all of it, from a single backyard stump to acreage clearing.</p>
@@ -498,7 +498,7 @@ CITIES = [
   "slug":"waunakee","name":"Waunakee","zips":"53597",
   "hoods":["Village Center","Ripp Park area","Kilkenny Farms","Westbridge","Six Mile Creek"],
   "meta_title":"Stump Grinding Waunakee WI | Free On-Site Quote",
-  "meta_desc":"Insured stump grinding in Waunakee, WI. Farmland-to-subdivision clearing, wetland-edge care, same-day response. Call (608) 555-0147 for a free quote.",
+  "meta_desc":"Insured stump grinding in Waunakee, WI. Farmland-to-subdivision clearing, wetland-edge care, same-day response. Call (608) 493-0540 for a free quote.",
   "lead":"There's only one Waunakee in the world — and one local crew that grinds its stumps clean and hauls the mess.",
   "body":"""
 <p>Waunakee likes to say it's the "only Waunakee in the world," and its steady growth north of Lake Mendota has turned a lot of former cropland into new neighborhoods around Kilkenny Farms and Westbridge. That transition leaves behind fence-line trees and hedgerow stumps, while older streets near the Village Center have their own mature shade trees. <strong>Madison Stump Grinding</strong> handles both.</p>
@@ -527,7 +527,7 @@ CITIES = [
   "slug":"stoughton","name":"Stoughton","zips":"53589",
   "hoods":["Historic Downtown","Mandt Park","Kettle Park","Riverside","Nordic Ridge"],
   "meta_title":"Stump Grinding Stoughton WI | Free Estimates",
-  "meta_desc":"Insured stump grinding in Stoughton, WI. Legacy riverfront trees, tight older-lot access, same-day response. Call (608) 555-0147 for a free quote.",
+  "meta_desc":"Insured stump grinding in Stoughton, WI. Legacy riverfront trees, tight older-lot access, same-day response. Call (608) 493-0540 for a free quote.",
   "lead":"Along the Yahara in historic Stoughton, we remove the big legacy stumps other crews won't touch.",
   "body":"""
 <p>Stoughton wears its history proudly — Norwegian heritage, the Syttende Mai festival, and a walkable downtown of restored tobacco warehouses along the Yahara River. Those older, established lots also hold some of Dane County's largest legacy trees, and when a century-old maple or oak finally comes down, the stump can be enormous. <strong>Madison Stump Grinding</strong> has the equipment to finish the job.</p>
@@ -556,7 +556,7 @@ CITIES = [
   "slug":"oregon","name":"Oregon","zips":"53575",
   "hoods":["Rome Corners","Jaycee Park area","Alpine Meadows","Downtown Oregon","Bergamont"],
   "meta_title":"Stump Grinding Oregon WI | Free On-Site Quotes",
-  "meta_desc":"Insured stump grinding in Oregon, WI. Windbreak & fence-line clearing, village and rural service, same-day response. Call (608) 555-0147.",
+  "meta_desc":"Insured stump grinding in Oregon, WI. Windbreak & fence-line clearing, village and rural service, same-day response. Call (608) 493-0540.",
   "lead":"In the Village of Oregon and the farmland around it, we grind stumps and clear windbreaks fast.",
   "body":"""
 <p>The Village of Oregon has the feel of a small town with room to breathe, ringed by working farmland in southern Dane County. That mix means we see everything here — tidy backyard stumps in Bergamont and Alpine Meadows, plus old windbreaks and fence-line trees on rural parcels near Rome Corners. <strong>Madison Stump Grinding</strong> covers the whole area.</p>
@@ -585,7 +585,7 @@ CITIES = [
   "slug":"monona","name":"Monona","zips":"53716",
   "hoods":["Frost Woods","Winnequah","San Damiano area","Ahuska Park","Maywood"],
   "meta_title":"Stump Grinding Monona WI | Free Estimates, Insured",
-  "meta_desc":"Insured stump grinding in Monona, WI. Lakefront lots, tight-access yards, hardscape-safe grinding, same-day response. Call (608) 555-0147.",
+  "meta_desc":"Insured stump grinding in Monona, WI. Lakefront lots, tight-access yards, hardscape-safe grinding, same-day response. Call (608) 493-0540.",
   "lead":"On Monona's compact lakefront lots, careful access and a clean finish are everything — and that's our specialty.",
   "body":"""
 <p>Tucked against the east shore of Lake Monona and nearly surrounded by Madison, the city of Monona is a community of mature, established lots — Frost Woods, Winnequah, and the leafy streets near Ahuska Park. Big lakeshore oaks, ashes, and maples shade compact yards here, and when one comes down, the stump often sits in a tight space near a home, fence, or patio. <strong>Madison Stump Grinding</strong> is built for exactly that.</p>
@@ -614,7 +614,7 @@ CITIES = [
   "slug":"deforest","name":"DeForest","zips":"53532",
   "hoods":["Windsor","Yahara area","Conservancy Place","Fireman's Park area","Prairie View"],
   "meta_title":"Stump Grinding DeForest WI | Free On-Site Quote",
-  "meta_desc":"Insured stump grinding in DeForest, WI. New-build lot clearing, hedgerow removal, same-day response. Call (608) 555-0147 for a free estimate.",
+  "meta_desc":"Insured stump grinding in DeForest, WI. New-build lot clearing, hedgerow removal, same-day response. Call (608) 493-0540 for a free estimate.",
   "lead":"Home of the Norski and growing fast — we clear DeForest's new-build stumps and old hedgerows alike.",
   "body":"""
 <p>Just north of Madison where I-39, 90, and 94 split, DeForest and neighboring Windsor have become one of Dane County's fastest-growing corners. New subdivisions keep replacing farm fields, and that steady build-out leaves behind fence-line trees, hedgerow stumps, and the occasional big old yard tree near Fireman's Park. <strong>Madison Stump Grinding</strong> keeps up with the growth.</p>
@@ -643,7 +643,7 @@ CITIES = [
   "slug":"mcfarland","name":"McFarland","zips":"53558",
   "hoods":["Lake Waubesa shore","Babcock Park area","Larson Beach","Indian Mound","Woods Edge"],
   "meta_title":"Stump Grinding McFarland WI | Free Estimates",
-  "meta_desc":"Insured stump grinding in McFarland, WI, on Lake Waubesa. Wet-soil ready gear, small-lot access, same-day response. Call (608) 555-0147.",
+  "meta_desc":"Insured stump grinding in McFarland, WI, on Lake Waubesa. Wet-soil ready gear, small-lot access, same-day response. Call (608) 493-0540.",
   "lead":"On the shore of Lake Waubesa, we grind McFarland's stumps clean without turning your yard to mud.",
   "body":"""
 <p>McFarland sits on the south shore of Lake Waubesa, part of the Yahara chain of lakes, and its character is pure lakeside village — Babcock County Park, Larson Beach, and streets of mature shoreline trees. That waterfront setting also means wet ground and compact lots, a combination that calls for the right equipment. <strong>Madison Stump Grinding</strong> brings it.</p>
@@ -675,7 +675,7 @@ SERVICE_PAGES = {
  "tree-stump-removal-grinding": {
    "name":"Tree Stump Removal & Grinding","icon":"stump","hero_img":"/service-stump.jpg",
    "meta_title":"Tree Stump Removal & Grinding | Madison, WI",
-   "meta_desc":"Professional tree stump removal & grinding across Dane County, WI. Below-grade grinding, full cleanup, fully insured. Free quotes — call (608) 555-0147.",
+   "meta_desc":"Professional tree stump removal & grinding across Dane County, WI. Below-grade grinding, full cleanup, fully insured. Free quotes — call (608) 493-0540.",
    "lead":"The core of what we do: fast, complete stump grinding that gets the eyesore out and your yard back — below grade, cleaned up, and ready to plant.",
    "body":"""
 <p>A ground-out stump is more than a cosmetic fix. Left in place, stumps sprout suckers, attract carpenter ants and termites, host fungus, wreck mower blades, and take up space you'd rather use. <strong>Madison Stump Grinding</strong> removes that headache the efficient way — mechanical grinding that turns the stump and its roots into usable mulch, without the huge hole and expense of full excavation.</p>
@@ -708,7 +708,7 @@ SERVICE_PAGES = {
  "root-surface-grinding-land-clearing": {
    "name":"Root Surface Grinding & Land Clearing","icon":"roots","hero_img":"/service-roots.jpg",
    "meta_title":"Root Grinding & Land Clearing | Dane County WI",
-   "meta_desc":"Surface root grinding & land clearing across Greater Madison, WI. Clear lots, hedgerows & invasive roots. Fully insured. Free quotes — call (608) 555-0147.",
+   "meta_desc":"Surface root grinding & land clearing across Greater Madison, WI. Clear lots, hedgerows & invasive roots. Fully insured. Free quotes — call (608) 493-0540.",
    "lead":"Beyond single stumps: we grind heaving surface roots and clear overgrown lots, hedgerows, and fence lines so your ground is usable again.",
    "body":"""
 <p>Sometimes the problem isn't one stump — it's a web of surface roots buckling your lawn, or an overgrown lot line you need cleared before you can build, farm, or landscape. <strong>Madison Stump Grinding</strong> handles both, combining root grinding with practical small-scale land clearing across Dane County.</p>
@@ -741,7 +741,7 @@ SERVICE_PAGES = {
  "emergency-stump-debris-removal": {
    "name":"Emergency Stump & Debris Removal","icon":"alert","hero_img":"/service-emergency.jpg",
    "meta_title":"Emergency Stump & Debris Removal | Madison WI",
-   "meta_desc":"Same-day emergency stump & storm-debris removal in Dane County, WI. Fast, insured cleanup after storms. Call (608) 555-0147 for rapid response.",
+   "meta_desc":"Same-day emergency stump & storm-debris removal in Dane County, WI. Fast, insured cleanup after storms. Call (608) 493-0540 for rapid response.",
    "lead":"When a storm drops a tree or you need a stump gone now, we respond fast — often same day — to clear the debris and grind what's left.",
    "body":"""
 <p>Wisconsin storms don't wait for a convenient time. High winds off the lakes, heavy wet snow, and summer downbursts regularly bring trees down across Dane County — leaving hazards, blocked drives, and torn-out stumps behind. <strong>Madison Stump Grinding</strong> offers fast, insured emergency response to clear the mess and finish the job.</p>
@@ -973,7 +973,7 @@ def build_home(inline=False):
         + cta_band()
     )
     return page_shell(inner, "Stump Grinding Madison WI | Dane County | Free Quotes",
-                      "Fully insured stump grinding & land clearing across Madison & Dane County, WI. Below-grade grinding, full cleanup, same-day response. Call (608) 555-0147.",
+                      "Fully insured stump grinding & land clearing across Madison & Dane County, WI. Below-grade grinding, full cleanup, same-day response. Call (608) 493-0540.",
                       url, schemas, hero_img="/hero-home.jpg", inline=inline)
 
 # ---------- ABOUT ----------
@@ -1032,7 +1032,7 @@ def build_about(inline=False):
         + cta_band()
     )
     return page_shell(inner, "About Us | Madison Stump Grinding, Dane County WI",
-                      "Locally operated, fully insured stump grinding for Madison & Dane County, WI. Honest pricing, property-safe work, fast response. Call (608) 555-0147.",
+                      "Locally operated, fully insured stump grinding for Madison & Dane County, WI. Honest pricing, property-safe work, fast response. Call (608) 493-0540.",
                       url, schemas, hero_img="/about-team.jpg", inline=inline)
 
 # ---------- CONTACT ----------
@@ -1041,7 +1041,7 @@ def build_contact(inline=False):
     trail = [("Home","/"),("Contact","/contact/")]
     schemas = [local_business_schema(url), breadcrumb_schema(trail)]
     contact_faqs = [
-      ("How do I get a free estimate?","Call (608) 555-0147 or fill out the quote form with your name, phone, property zip, and a photo if you have one. We respond fast — usually the same day — and schedule a free on-site estimate."),
+      ("How do I get a free estimate?","Call (608) 493-0540 or fill out the quote form with your name, phone, property zip, and a photo if you have one. We respond fast — usually the same day — and schedule a free on-site estimate."),
       ("What areas do you serve?","We serve Madison and the surrounding Dane County communities, including Sun Prairie, Fitchburg, Middleton, Verona, Waunakee, Stoughton, Oregon, Monona, DeForest, and McFarland."),
       ("What are your hours?","We're reachable seven days a week, 7:00am to 7:00pm, with emergency response available for storm damage and urgent hazards."),
     ]
@@ -1080,7 +1080,7 @@ def build_contact(inline=False):
         + cta_band()
     )
     return page_shell(inner, "Contact | Free Stump Grinding Quote | Madison WI",
-                      "Contact Madison Stump Grinding for a free, same-day estimate in Dane County, WI. Call (608) 555-0147 or request a quote online. Residential & commercial.",
+                      "Contact Madison Stump Grinding for a free, same-day estimate in Dane County, WI. Call (608) 493-0540 or request a quote online. Residential & commercial.",
                       url, schemas, hero_img="/hero-home.jpg", inline=inline)
 
 # ================================================================== sitemap
