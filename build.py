@@ -69,6 +69,7 @@ def head(title, desc, canonical, schemas, hero_img=None, inline=False):
                '%3Crect width=%2732%27 height=%2732%27 rx=%277%27 fill=%27%231b4332%27/%3E'
                '%3Ctext x=%2716%27 y=%2722%27 font-size=%2718%27 text-anchor=%27middle%27 fill=%27%23ff922b%27 font-family=%27Arial%27 font-weight=%27bold%27%3ES%3C/text%3E%3C/svg%3E">')
     og_img = SITE["domain"] + "/og-image.jpg"
+    preload = (f'<link rel="preload" as="image" href="{hero_img}" fetchpriority="high">' if hero_img else "")
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -88,6 +89,7 @@ def head(title, desc, canonical, schemas, hero_img=None, inline=False):
 <meta property="og:site_name" content="{SITE['name']}">
 <meta name="twitter:card" content="summary_large_image">
 {favicon}
+{preload}
 {fonts}
 {css}
 {schema_tags}
@@ -193,7 +195,7 @@ def trustbar():
       <span class="badge__txt"><strong>{t}</strong><span>{s}</span></span></div>""" for i,t,s in items)
     return f'<section class="trustbar" aria-label="Why homeowners trust us"><div class="trustbar__grid">{b}</div></section>'
 
-def hero(loc_line, h1, lead_txt, checks=None, hero_img="/hero-home.jpg", fid="hero-lead", crumbs_html=""):
+def hero(loc_line, h1, lead_txt, checks=None, hero_img="/hero-home.webp", fid="hero-lead", crumbs_html=""):
     style = f' style="--hero-img:url({hero_img})"' if hero_img else ""
     checks_html = ""
     if checks:
@@ -677,7 +679,7 @@ CITIES = [
 # ---- SERVICES (bespoke copy) ----
 SERVICE_PAGES = {
  "tree-stump-removal-grinding": {
-   "name":"Tree Stump Removal & Grinding","icon":"stump","hero_img":"/service-stump.jpg",
+   "name":"Tree Stump Removal & Grinding","icon":"stump","hero_img":"/service-stump.webp",
    "meta_title":"Tree Stump Removal & Grinding | Madison, WI",
    "meta_desc":"Professional tree stump removal & grinding across Dane County, WI. Below-grade grinding, full cleanup, fully insured. Free quotes — call (608) 493-0540.",
    "lead":"The core of what we do: fast, complete stump grinding that gets the eyesore out and your yard back — below grade, cleaned up, and ready to plant.",
@@ -710,7 +712,7 @@ SERVICE_PAGES = {
    ],
  },
  "root-surface-grinding-land-clearing": {
-   "name":"Root Surface Grinding & Land Clearing","icon":"roots","hero_img":"/service-roots.jpg",
+   "name":"Root Surface Grinding & Land Clearing","icon":"roots","hero_img":"/service-roots.webp",
    "meta_title":"Root Grinding & Land Clearing | Dane County WI",
    "meta_desc":"Surface root grinding & land clearing across Greater Madison, WI. Clear lots, hedgerows & invasive roots. Fully insured. Free quotes — call (608) 493-0540.",
    "lead":"Beyond single stumps: we grind heaving surface roots and clear overgrown lots, hedgerows, and fence lines so your ground is usable again.",
@@ -743,7 +745,7 @@ SERVICE_PAGES = {
    ],
  },
  "emergency-stump-debris-removal": {
-   "name":"Emergency Stump & Debris Removal","icon":"alert","hero_img":"/service-emergency.jpg",
+   "name":"Emergency Stump & Debris Removal","icon":"alert","hero_img":"/service-emergency.webp",
    "meta_title":"Emergency Stump & Debris Removal | Madison WI",
    "meta_desc":"Same-day emergency stump & storm-debris removal in Dane County, WI. Fast, insured cleanup after storms. Call (608) 493-0540 for rapid response.",
    "lead":"When a storm drops a tree or you need a stump gone now, we respond fast — often same day — to clear the debris and grind what's left.",
@@ -817,7 +819,7 @@ def build_city(c, inline=False):
             loc_line=f'Stump Grinding &middot; {c["name"]}, Wisconsin',
             h1=f'Stump Grinding in {c["name"]}, WI',
             lead_txt=c["lead"],
-            hero_img="/hero-home.jpg",
+            hero_img="/hero-home.webp",
             fid=f'lead-{c["slug"]}',
             crumbs_html=crumbs(trail),
         )
@@ -838,7 +840,7 @@ def build_city(c, inline=False):
                    p=f'Fast, fully insured stump grinding for {c["name"]} homeowners and businesses. Same-day estimates available — call now or request a quote online.')
     )
     return page_shell(inner, c["meta_title"], c["meta_desc"], url, schemas,
-                      hero_img="/hero-home.jpg", inline=inline)
+                      hero_img="/hero-home.webp", inline=inline)
 
 # ---------- SERVICE PAGES ----------
 def build_service(slug, inline=False):
@@ -908,7 +910,7 @@ def build_home(inline=False):
             h1="Stump Grinding &amp; Land Clearing, Done Right",
             lead_txt="Fully insured, locally operated, and fast. We grind stumps below grade, clear the debris, and leave your yard level and ready to plant — from Madison to every corner of Dane County.",
             checks=["Free on-site estimates","Same-day response available","Backyard-gate access machines","Full cleanup &amp; haul-away"],
-            hero_img="/hero-home.jpg",
+            hero_img="/hero-home.webp",
             fid="lead-home",
         )
         + trustbar()
@@ -935,7 +937,7 @@ def build_home(inline=False):
       </ul>
       <a class="btn btn--green btn--lg" href="/contact/">Get a Free Estimate</a>
     </div>
-    <div><img src="/service-stump.jpg" alt="Stump grinder removing a tree stump in a Dane County backyard" loading="lazy"></div>
+    <div><img src="/service-stump.webp" alt="Stump grinder removing a tree stump in a Dane County backyard" loading="lazy"></div>
   </div>
 </section>
 
@@ -978,7 +980,7 @@ def build_home(inline=False):
     )
     return page_shell(inner, "Stump Grinding Madison WI | Dane County | Free Quotes",
                       "Fully insured stump grinding & land clearing across Madison & Dane County, WI. Below-grade grinding, full cleanup, same-day response. Call (608) 493-0540.",
-                      url, schemas, hero_img="/hero-home.jpg", inline=inline)
+                      url, schemas, hero_img="/hero-home.webp", inline=inline)
 
 # ---------- ABOUT ----------
 def build_about(inline=False):
@@ -990,7 +992,7 @@ def build_about(inline=False):
             loc_line="About Madison Stump Grinding",
             h1="Your Local Dane County Stump Grinding Team",
             lead_txt="Locally operated, fully insured, and genuinely fast. We started with one grinder and a simple promise: clear pricing, clean work, and respect for your property.",
-            hero_img="/about-team.jpg",
+            hero_img="/about-team.webp",
             fid="lead-about",
             crumbs_html=crumbs(trail),
         )
@@ -1005,7 +1007,7 @@ def build_about(inline=False):
       <p>That's the whole business. We're not a national franchise or a call center. We're a local crew that knows the difference between a Monona lakefront lot and a DeForest new-build, and we bring the right machine for each.</p>
       <a class="btn btn--green btn--lg" href="/contact/">Request a Free Estimate</a>
     </div>
-    <div><img src="/about-team.jpg" alt="Local stump grinding crew with equipment in Dane County, Wisconsin" loading="lazy"></div>
+    <div><img src="/about-team.webp" alt="Local stump grinding crew with equipment in Dane County, Wisconsin" loading="lazy"></div>
   </div>
 </section>
 
@@ -1023,7 +1025,7 @@ def build_about(inline=False):
 
 <section class="section">
   <div class="container split">
-    <div><img src="/service-roots.jpg" alt="Land clearing and root grinding on a Dane County property" loading="lazy"></div>
+    <div><img src="/service-roots.webp" alt="Land clearing and root grinding on a Dane County property" loading="lazy"></div>
     <div>
       <p class="eyebrow">Why Local Matters</p>
       <h2>We Know Dane County Ground</h2>
@@ -1037,7 +1039,7 @@ def build_about(inline=False):
     )
     return page_shell(inner, "About Us | Madison Stump Grinding, Dane County WI",
                       "Locally operated, fully insured stump grinding for Madison & Dane County, WI. Honest pricing, property-safe work, fast response. Call (608) 493-0540.",
-                      url, schemas, hero_img="/about-team.jpg", inline=inline)
+                      url, schemas, hero_img="/about-team.webp", inline=inline)
 
 # ---------- CONTACT ----------
 def build_contact(inline=False):
@@ -1085,7 +1087,7 @@ def build_contact(inline=False):
     )
     return page_shell(inner, "Contact | Free Stump Grinding Quote | Madison WI",
                       "Contact Madison Stump Grinding for a free, same-day estimate in Dane County, WI. Call (608) 493-0540 or request a quote online. Residential & commercial.",
-                      url, schemas, hero_img="/hero-home.jpg", inline=inline)
+                      url, schemas, hero_img="/hero-home.webp", inline=inline)
 
 # ================================================================== sitemap
 def build_sitemap():

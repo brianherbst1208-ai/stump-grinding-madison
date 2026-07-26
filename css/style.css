@@ -287,7 +287,7 @@ li { margin-bottom: .4em; }
 
 /* ---------- Split content ---------- */
 .split { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(28px,4vw,56px); align-items: center; }
-.split img { border-radius: var(--radius-lg); box-shadow: var(--shadow-md); }
+.split img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); }
 .ticklist { list-style: none; padding: 0; margin: 1.2em 0; }
 .ticklist li { position: relative; padding-left: 34px; margin-bottom: 12px; }
 .ticklist li::before { content: "✓"; position: absolute; left: 0; top: 1px; width: 22px; height: 22px; border-radius: 50%; background: var(--green-100); color: var(--green-700); display: grid; place-items: center; font-weight: 800; font-size: 13px; }
