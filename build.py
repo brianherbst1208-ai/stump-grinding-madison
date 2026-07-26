@@ -14,6 +14,7 @@ SITE = {
     "phone_display": "(608) 493-0540",
     "phone_tel": "+16084930540",
     "email": "brian@briansconsulting.com",
+    "form_action": "https://formspree.io/f/xojgyqoe",
     "domain": "https://stumpgrindingmadison.com",
     "region": "WI",
     "hq_city": "Madison",
@@ -131,11 +132,14 @@ def header():
 </header>"""
 
 def lead_form(fid="lead", heading="Get Your Free On-Site Estimate", sub="No-obligation quote — most requests answered same day.", compact=False):
+    _fa = SITE.get("form_action", "").strip()
+    _form_open = (f'<form class="leadform" id="{fid}" action="{_fa}" method="post" enctype="multipart/form-data" data-lead novalidate>' if _fa else f'<form class="leadform" id="{fid}" action="#" method="post" enctype="multipart/form-data" data-lead data-demo="true" novalidate>')
+    _hidden = (f'<input type="hidden" name="_subject" value="New quote request &mdash; {SITE["name"]}"><input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">' if _fa else "")
     svc_opts = "".join(f'<option value="{o}">{o}</option>' for o in [
         "Tree Stump Removal & Grinding","Root Surface Grinding","Land Clearing",
         "Emergency / Storm Debris Removal","Multiple Stumps","Commercial Project","Other / Not Sure"])
     return f"""
-<form class="leadform" id="{fid}" action="#" method="post" enctype="multipart/form-data" data-lead data-demo="true" novalidate>
+{_form_open}{_hidden}
   <h3>{heading}</h3>
   <p class="leadform__sub">{sub}</p>
   <div class="field">

@@ -68,6 +68,28 @@
       }
     });
 
+    function showBanner(msg) {
+      var b = form.querySelector(".form-banner");
+      if (!b) {
+        b = document.createElement("p");
+        b.className = "form-banner";
+        b.style.cssText = "color:#d9480f;font-weight:600;margin:10px 0 0;text-align:center";
+        var btnEl = form.querySelector('button[type="submit"]');
+        if (btnEl && btnEl.parentNode) btnEl.parentNode.insertBefore(b, btnEl.nextSibling);
+        else form.appendChild(b);
+      }
+      b.textContent = msg;
+    }
+    function done() {
+      form.querySelectorAll(".field, .btn, .form-note").forEach(function (el) { el.style.display = "none"; });
+      var b = form.querySelector(".form-banner"); if (b) b.remove();
+      if (success) success.style.display = "block";
+    }
+
+    // Tag each submission with the page it came from
+    var sp = form.querySelector('input[name="source_page"]');
+    if (sp && !sp.value) sp.value = (document.title || "") + " " + window.location.pathname;
+
     form.addEventListener("submit", function (e) {
       var allValid = true;
       form.querySelectorAll(".field").forEach(function (field) {
@@ -79,14 +101,32 @@
         if (firstBad) firstBad.focus();
         return;
       }
-      // DEMO MODE: no live backend wired yet. Prevent default and show success.
-      // To go live, set the form's action to your Formspree/Netlify endpoint
-      // and remove the block below (see README.md).
+      // DEMO MODE: no live backend wired. Show success without sending.
       if (form.getAttribute("action") === "#" || form.dataset.demo === "true") {
         e.preventDefault();
-        form.querySelectorAll(".field, .btn").forEach(function (el) { el.style.display = "none"; });
-        if (success) { success.style.display = "block"; }
+        done();
+        return;
       }
+      // LIVE: submit via AJAX (Formspree) so the visitor stays on the page.
+      e.preventDefault();
+      var btn = form.querySelector('button[type="submit"]');
+      var orig = btn ? btn.innerHTML : "";
+      if (btn) { btn.disabled = true; btn.innerHTML = "Sending…"; }
+      fetch(form.action, { method: "POST", body: new FormData(form), headers: { "Accept": "application/json" } })
+        .then(function (res) {
+          if (res.ok) { done(); return; }
+          return res.json().then(function (d) {
+            var msg = (d && d.errors && d.errors.length)
+              ? d.errors.map(function (x) { return x.message; }).join(", ")
+              : "Sorry — something went wrong. Please call us instead.";
+            showBanner(msg);
+            if (btn) { btn.disabled = false; btn.innerHTML = orig; }
+          });
+        })
+        .catch(function () {
+          showBanner("Network error — please call us at the number above.");
+          if (btn) { btn.disabled = false; btn.innerHTML = orig; }
+        });
     });
   });
 
