@@ -80,6 +80,19 @@
       }
       b.textContent = msg;
     }
+    function fireLead() {
+      try {
+        if (typeof window.gtag === "function") {
+          var svcEl = form.querySelector('[name="service"]');
+          window.gtag("event", "generate_lead", {
+            form_id: form.id || "lead",
+            service: svcEl ? svcEl.value : "",
+            page_path: window.location.pathname
+          });
+        }
+      } catch (e) {}
+    }
+
     function done() {
       form.querySelectorAll(".field, .btn, .form-note").forEach(function (el) { el.style.display = "none"; });
       var b = form.querySelector(".form-banner"); if (b) b.remove();
@@ -114,7 +127,7 @@
       if (btn) { btn.disabled = true; btn.innerHTML = "Sending…"; }
       fetch(form.action, { method: "POST", body: new FormData(form), headers: { "Accept": "application/json" } })
         .then(function (res) {
-          if (res.ok) { done(); return; }
+          if (res.ok) { fireLead(); done(); return; }
           return res.json().then(function (d) {
             var msg = (d && d.errors && d.errors.length)
               ? d.errors.map(function (x) { return x.message; }).join(", ")
