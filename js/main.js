@@ -143,6 +143,23 @@
     });
   });
 
+  /* ---- Phone-click tracking (GA event, guarded no-op without GA) ---- */
+  document.addEventListener("click", function (e) {
+    var el = e.target;
+    if (!el || !el.closest) return;
+    var a = el.closest('a[href^="tel:"]');
+    if (!a) return;
+    try {
+      if (typeof window.gtag === "function") {
+        window.gtag("event", "phone_call", {
+          phone: a.getAttribute("href").replace(/^tel:/, ""),
+          link_text: (a.textContent || "").trim().slice(0, 100),
+          page_path: window.location.pathname
+        });
+      }
+    } catch (err) {}
+  });
+
   /* ---- Footer year ---- */
   var yr = document.getElementById("year");
   if (yr) yr.textContent = new Date().getFullYear();
