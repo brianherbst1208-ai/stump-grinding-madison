@@ -301,7 +301,7 @@ def footer():
       <span><a href="/about/">About</a> &middot; <a href="/contact/">Contact</a> &middot; <a href="/sitemap.xml">Sitemap</a></span>
     </div>
   </div>
-  <p class="footer__disclaimer">Madison Stump Grinding is a local lead service. Phone number, business details, imagery, and testimonials shown are placeholders for demonstration and should be replaced with the operating provider's real information. Pricing figures are typical ballpark ranges only; every quote is confirmed with a free on-site estimate.</p>
+  <p class="footer__disclaimer">Madison Stump Grinding is a local lead service connecting property owners with vetted area stump grinding and land clearing crews. Project photography is illustrative. Pricing figures are typical ballpark ranges only; every quote is confirmed with a free on-site estimate.</p>
 </footer>"""
 
 # ------------------------------------------------------------------ schema
@@ -318,7 +318,6 @@ def local_business_schema(page_url, name_suffix=None):
         "priceRange": "$$",
         "address": {
             "@type": "PostalAddress",
-            "streetAddress": "123 Terrace Ave (placeholder)",
             "addressLocality": "Madison",
             "addressRegion": "WI",
             "postalCode": "53703",
@@ -964,16 +963,7 @@ def build_home(inline=False):
   </div>
 </section>
 
-<section class="section">
-  <div class="container">
-    <div class="center"><p class="eyebrow">What Neighbors Say</p><h2>Trusted Across the Greater Madison Area</h2></div>
-    <div class="grid grid--3" style="margin-top:36px">
-      <div class="quote"><div class="quote__stars">★★★★★</div><p>"Ground out three huge maple stumps in our Monona backyard in one afternoon and left it perfectly level. Fair price and great cleanup."</p><p class="quote__who">Sarah K.<span>Monona, WI</span></p></div>
-      <div class="quote"><div class="quote__stars">★★★★★</div><p>"Fast, insured, and professional. They fit the grinder through our narrow gate on the isthmus without a scratch on the fence."</p><p class="quote__who">Dave R.<span>Madison, WI</span></p></div>
-      <div class="quote"><div class="quote__stars">★★★★★</div><p>"Cleared a whole fence line of old stumps on our Verona property. Showed up on time and quoted exactly what they charged."</p><p class="quote__who">The Hansons<span>Verona, WI</span></p></div>
-    </div>
-  </div>
-</section>"""
+"""
         + area_chips()
         + faq_block(home_faqs)
         + cta_band()
