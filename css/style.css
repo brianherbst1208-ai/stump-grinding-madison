@@ -414,7 +414,16 @@ li { margin-bottom: .4em; }
   .hero__checks { grid-template-columns: 1fr; }
   .callbar__inner { font-size: .9rem; }
   .badge { justify-content: flex-start; }
+  /* Mobile callbar: hide the blurb and give the phone CTA the full width.
+     Without this, .callbar__phone{white-space:nowrap} overflows the viewport
+     on themes with a WIDE display font (e.g. Bitter), causing horizontal scroll. */
+  .callbar__msg { display: none; }
+  .callbar__inner { justify-content: center; gap: 0; padding: 7px 14px; }
+  .callbar__phone { font-size: 1.02rem; white-space: normal; text-align: center; }
 }
+
+/* long headings/words must never force horizontal scroll */
+h1, h2, h3, h4 { overflow-wrap: break-word; }
 
 /* reduced motion */
 @media (prefers-reduced-motion: reduce) {
