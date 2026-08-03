@@ -429,3 +429,5 @@ h1, h2, h3, h4 { overflow-wrap: break-word; }
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; scroll-behavior: auto !important; transition: none !important; }
 }
+/* callbar icon must never stretch (it has no intrinsic px size) */
+.callbar__phone svg { width: 18px; height: 18px; flex: none; }
